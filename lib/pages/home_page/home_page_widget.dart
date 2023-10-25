@@ -80,7 +80,11 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
-                        await actions.apiCallInBackground();
+                        _model.output = await actions.runBackgroundCall(
+                          _model.switchValue,
+                        );
+
+                        setState(() {});
                       },
                       text: 'Button',
                       options: FFButtonOptions(
@@ -111,6 +115,17 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     FFAppState().apiResponse,
                     style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
+                Switch.adaptive(
+                  value: _model.switchValue ??= true,
+                  onChanged: (newValue) async {
+                    setState(() => _model.switchValue = newValue!);
+                  },
+                  activeColor: FlutterFlowTheme.of(context).primary,
+                  activeTrackColor: FlutterFlowTheme.of(context).accent1,
+                  inactiveTrackColor: FlutterFlowTheme.of(context).alternate,
+                  inactiveThumbColor:
+                      FlutterFlowTheme.of(context).secondaryText,
+                ),
               ],
             ),
           ),

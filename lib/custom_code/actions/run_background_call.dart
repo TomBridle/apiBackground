@@ -20,6 +20,10 @@ import 'package:http/http.dart' as http;
 // Declare a variable to store the API response
 String apiResponse = '';
 bool? checkPeriodically;
+Future<String?> runBackgroundCall(bool? checkPeriodically) async {
+  mainAction();
+  apiCallInBackground(checkPeriodically);
+}
 
 Future mainAction() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -92,6 +96,9 @@ Future<String?> apiCallInBackground(bool? checkPeriodically) async {
 
       return responseBody;
     } catch (e) {
+      FFAppState().update(() {
+        FFAppState().apiResponse = "$e";
+      });
       // Handle any exceptions that may occur during the API call
       print("Error: $e");
     }
@@ -99,8 +106,4 @@ Future<String?> apiCallInBackground(bool? checkPeriodically) async {
     // Wait for 10 seconds before making the next API call
     await Future.delayed(Duration(seconds: 5));
   }
-  return "Done";
-  // This part is unreachable because the function always returns inside the while loop.
-  // If you want to continue the API call in the background, you should remove this line.
-  // apiCallInBackground(checkPeriodically);
 }

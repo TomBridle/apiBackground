@@ -28,6 +28,12 @@ class FFAppState extends ChangeNotifier {
   set apiResponse(String _value) {
     _apiResponse = _value;
   }
+
+  String _error = '';
+  String get error => _error;
+  set error(String _value) {
+    _error = _value;
+  }
 }
 
 LatLng? _latLngFromString(String? val) {
