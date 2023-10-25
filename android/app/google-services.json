@@ -1,0 +1,303 @@
+{
+  "project_info": {
+    "project_number": "996993345043",
+    "firebase_url": "https://tradesmart-ebb4b-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "tradesmart-ebb4b",
+    "storage_bucket": "tradesmart-ebb4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996993345043:android:ada5546f11e3fa8c06c1e6",
+        "android_client_info": {
+          "package_name": "ccom.crewsmart.crewsmartvesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996993345043-j8kne32dno7bfpu289ccn1rhkutgvdeg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ccom.crewsmart.crewsmartvesapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "996993345043-pd3105c4ehcfhi7tt09fcb8h9nnbtbd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbe6ZWt6wsh_QJd-b5E5xBarzyFHvfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996993345043-lnq0n4gknm58lh5t9e0b6ge0dhuvj1kl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996993345043-6m5uu7toko4j2rgb37tcprpdl9bqe3s2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tradesmart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996993345043:android:7cedd2b3adfa00cd06c1e6",
+        "android_client_info": {
+          "package_name": "com.example.beeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996993345043-5ih00489kma421o07sauilr6h6t2hlqh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.beeapp",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "996993345043-pd3105c4ehcfhi7tt09fcb8h9nnbtbd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbe6ZWt6wsh_QJd-b5E5xBarzyFHvfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996993345043-lnq0n4gknm58lh5t9e0b6ge0dhuvj1kl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996993345043-6m5uu7toko4j2rgb37tcprpdl9bqe3s2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tradesmart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996993345043:android:826e6921d8ad272e06c1e6",
+        "android_client_info": {
+          "package_name": "com.example.web_new_version"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996993345043-pd3105c4ehcfhi7tt09fcb8h9nnbtbd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbe6ZWt6wsh_QJd-b5E5xBarzyFHvfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996993345043-lnq0n4gknm58lh5t9e0b6ge0dhuvj1kl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996993345043-6m5uu7toko4j2rgb37tcprpdl9bqe3s2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tradesmart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996993345043:android:a59bc2d74254123d06c1e6",
+        "android_client_info": {
+          "package_name": "com.mycompany.backgroundapi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996993345043-pd3105c4ehcfhi7tt09fcb8h9nnbtbd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbe6ZWt6wsh_QJd-b5E5xBarzyFHvfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996993345043-lnq0n4gknm58lh5t9e0b6ge0dhuvj1kl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996993345043-6m5uu7toko4j2rgb37tcprpdl9bqe3s2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tradesmart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996993345043:android:9431c684305f0b2606c1e6",
+        "android_client_info": {
+          "package_name": "com.mycompany.tradesmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996993345043-hcpvensefq92otr5u3bag61kl1ou09ff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.tradesmart",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "996993345043-pd3105c4ehcfhi7tt09fcb8h9nnbtbd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbe6ZWt6wsh_QJd-b5E5xBarzyFHvfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996993345043-lnq0n4gknm58lh5t9e0b6ge0dhuvj1kl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996993345043-6m5uu7toko4j2rgb37tcprpdl9bqe3s2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tradesmart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996993345043:android:4b0c5debe0bc5e7506c1e6",
+        "android_client_info": {
+          "package_name": "com.mycompany.tradesmartwebtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996993345043-cnjv8d2u9qlu9jif0tnhrj08ddc7njg9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.tradesmartwebtest",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "996993345043-pd3105c4ehcfhi7tt09fcb8h9nnbtbd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbe6ZWt6wsh_QJd-b5E5xBarzyFHvfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996993345043-lnq0n4gknm58lh5t9e0b6ge0dhuvj1kl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996993345043-6m5uu7toko4j2rgb37tcprpdl9bqe3s2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tradesmart"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:996993345043:android:34e5c7f5a032297b06c1e6",
+        "android_client_info": {
+          "package_name": "com.tradesmart.engineer_app_new"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "996993345043-r685ci4peosihif4miif85qug8412bo5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tradesmart.engineer_app_new",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "996993345043-pd3105c4ehcfhi7tt09fcb8h9nnbtbd4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMbe6ZWt6wsh_QJd-b5E5xBarzyFHvfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "996993345043-lnq0n4gknm58lh5t9e0b6ge0dhuvj1kl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "996993345043-6m5uu7toko4j2rgb37tcprpdl9bqe3s2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.tradesmart"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
