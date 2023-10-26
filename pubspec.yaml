@@ -30,6 +30,8 @@ dependencies:
   cloud_firestore: 4.8.0
   cloud_firestore_platform_interface: 5.15.0
   cloud_firestore_web: 3.6.0
+  device_info_plus: ^9.1.0
+  equatable: 2.0.5
   firebase_core: 2.13.1
   firebase_core_platform_interface: 4.8.0
   firebase_core_web: 2.5.0
@@ -44,6 +46,7 @@ dependencies:
   http: any
   intl: 0.18.1
   json_path: 0.6.2
+  mime_type: 1.0.0
   page_transition: 2.0.4
   path_provider: 2.0.14
   path_provider_android: 2.0.25
@@ -71,9 +74,21 @@ dependencies:
   cupertino_icons: ^1.0.0
 
 dev_dependencies:
+  flutter_launcher_icons: 0.13.1
+  image: 4.0.17
 
   flutter_test:
     sdk: flutter
+
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  web:
+    generate: true
+  image_path: 'assets/images/app_launcher_icon.png'
+
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

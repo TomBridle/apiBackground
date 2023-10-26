@@ -54,8 +54,7 @@
 	<true/>
 
 
-	<key>UIBackgroundModes</key>
-    <string>Background Updates</string>
+
 
 
 	<key>UILaunchStoryboardName</key>

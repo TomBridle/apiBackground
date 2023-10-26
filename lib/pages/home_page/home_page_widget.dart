@@ -1,7 +1,10 @@
+import '/backend/api_requests/api_calls.dart';
+import '/backend/backend.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
 import '/custom_code/actions/index.dart' as actions;
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -80,9 +83,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   children: [
                     FFButtonWidget(
                       onPressed: () async {
-                        _model.output = await actions.runBackgroundCall(
-                          _model.switchValue,
-                        );
+                        _model.output = await actions.mainAction();
 
                         setState(() {});
                       },
@@ -107,12 +108,23 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
+                    if (_model.output != null && _model.output != '')
+                      Text(
+                        _model.output!,
+                        style: FlutterFlowTheme.of(context).bodyMedium,
+                      ),
                   ],
                 ),
                 if (FFAppState().apiResponse != null &&
                     FFAppState().apiResponse != '')
                   Text(
                     FFAppState().apiResponse,
+                    style: FlutterFlowTheme.of(context).bodyMedium,
+                  ),
+                if (FFAppState().apiResponse != null &&
+                    FFAppState().apiResponse != '')
+                  Text(
+                    (_model.apiResult3k1?.jsonBody ?? '').toString(),
                     style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
                 Switch.adaptive(
@@ -125,6 +137,39 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                   inactiveTrackColor: FlutterFlowTheme.of(context).alternate,
                   inactiveThumbColor:
                       FlutterFlowTheme.of(context).secondaryText,
+                ),
+                FFButtonWidget(
+                  onPressed: () async {
+                    _model.apiResult3k1 = await TestingGroup.postsCall.call();
+                    if ((_model.apiResult3k1?.succeeded ?? true)) {
+                      await TestRecord.collection
+                          .doc()
+                          .set(createTestRecordData(
+                            test: getCurrentTimestamp.toString(),
+                          ));
+                    }
+
+                    setState(() {});
+                  },
+                  text: 'Button',
+                  options: FFButtonOptions(
+                    height: 40.0,
+                    padding:
+                        EdgeInsetsDirectional.fromSTEB(24.0, 0.0, 24.0, 0.0),
+                    iconPadding:
+                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
+                    color: FlutterFlowTheme.of(context).primary,
+                    textStyle: FlutterFlowTheme.of(context).titleSmall.override(
+                          fontFamily: 'Readex Pro',
+                          color: Colors.white,
+                        ),
+                    elevation: 3.0,
+                    borderSide: BorderSide(
+                      color: Colors.transparent,
+                      width: 1.0,
+                    ),
+                    borderRadius: BorderRadius.circular(8.0),
+                  ),
                 ),
               ],
             ),

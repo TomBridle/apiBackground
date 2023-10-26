@@ -20,12 +20,8 @@ import 'package:http/http.dart' as http;
 // Declare a variable to store the API response
 String apiResponse = '';
 bool? checkPeriodically;
-Future<String?> runBackgroundCall(bool? checkPeriodically) async {
-  mainAction();
-  apiCallInBackground(checkPeriodically);
-}
 
-Future mainAction() async {
+Future mainAction2() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initializeService();
 }
@@ -80,6 +76,8 @@ Future<String?> apiCallInBackground(bool? checkPeriodically) async {
     final apiUrl = 'https://test.brightlingsea.info/wp-json/wp/v2/posts/10795';
 
     try {
+      await Future.delayed(Duration(seconds: 5));
+
       final response = await http.get(Uri.parse(apiUrl));
       String responseBody = response.body;
 
@@ -102,8 +100,5 @@ Future<String?> apiCallInBackground(bool? checkPeriodically) async {
       // Handle any exceptions that may occur during the API call
       print("Error: $e");
     }
-
-    // Wait for 10 seconds before making the next API call
-    await Future.delayed(Duration(seconds: 5));
   }
 }
