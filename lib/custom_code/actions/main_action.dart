@@ -67,7 +67,7 @@ Future<void> initializeService() async {
         onForeground: onStart,
 
         // you have to enable background fetch capability on xcode project
-        // onBackground: onIosBackground,
+        onBackground: onIosBackground,
       ),
       androidConfiguration: AndroidConfiguration(
         // This will be executed when the app is in foreground or background in a separate isolate
@@ -84,6 +84,19 @@ Future<void> initializeService() async {
       FFAppState().error = "$e";
     });
   }
+}
+
+Future<bool> onIosBackground(ServiceInstance service) async {
+  WidgetsFlutterBinding.ensureInitialized();
+  DartPluginRegistrant.ensureInitialized();
+
+  SharedPreferences preferences = await SharedPreferences.getInstance();
+  await preferences.reload();
+  final log = preferences.getStringList('log') ?? <String>[];
+  log.add(DateTime.now().toIso8601String());
+  await preferences.setStringList('log', log);
+
+  return true;
 }
 
 Future<void> onStart(ServiceInstance service) async {

@@ -103,33 +103,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                         borderRadius: BorderRadius.circular(8.0),
                       ),
                     ),
-                    FFButtonWidget(
-                      onPressed: () async {
-                        await actions.showNotification(
-                          getCurrentTimestamp,
-                        );
-                      },
-                      text: 'Button',
-                      options: FFButtonOptions(
-                        height: 40.0,
-                        padding: EdgeInsetsDirectional.fromSTEB(
-                            24.0, 0.0, 24.0, 0.0),
-                        iconPadding:
-                            EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 0.0),
-                        color: FlutterFlowTheme.of(context).primary,
-                        textStyle:
-                            FlutterFlowTheme.of(context).titleSmall.override(
-                                  fontFamily: 'Readex Pro',
-                                  color: Colors.white,
-                                ),
-                        elevation: 3.0,
-                        borderSide: BorderSide(
-                          color: Colors.transparent,
-                          width: 1.0,
-                        ),
-                        borderRadius: BorderRadius.circular(8.0),
-                      ),
-                    ),
                     if (FFAppState().error != null && FFAppState().error != '')
                       SelectionArea(
                           child: Text(
@@ -155,17 +128,6 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                     ),
                     style: FlutterFlowTheme.of(context).bodyMedium,
                   ),
-                Switch.adaptive(
-                  value: _model.switchValue ??= true,
-                  onChanged: (newValue) async {
-                    setState(() => _model.switchValue = newValue!);
-                  },
-                  activeColor: FlutterFlowTheme.of(context).primary,
-                  activeTrackColor: FlutterFlowTheme.of(context).accent1,
-                  inactiveTrackColor: FlutterFlowTheme.of(context).alternate,
-                  inactiveThumbColor:
-                      FlutterFlowTheme.of(context).secondaryText,
-                ),
               ],
             ),
           ),
