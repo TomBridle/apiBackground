@@ -30,10 +30,22 @@ class FFAppState extends ChangeNotifier {
     _apiResponse = _value;
   }
 
-  String _error = '';
+  String _error = 'No Error';
   String get error => _error;
   set error(String _value) {
     _error = _value;
+  }
+
+  String _test = '';
+  String get test => _test;
+  set test(String _value) {
+    _test = _value;
+  }
+
+  DateTime? _time = DateTime.fromMillisecondsSinceEpoch(1698401880000);
+  DateTime? get time => _time;
+  set time(DateTime? _value) {
+    _time = _value;
   }
 }
 
