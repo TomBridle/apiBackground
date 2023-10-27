@@ -37,15 +37,22 @@ Future mainAction() async {
 
 Future<void> initializeService() async {
   try {
+    final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
+        FlutterLocalNotificationsPlugin();
+
+    if (!isAndroid) {
+      await flutterLocalNotificationsPlugin.initialize(
+        const InitializationSettings(
+          iOS: DarwinInitializationSettings(),
+        ),
+      );
+    }
     if (isAndroid) {
       const AndroidNotificationChannel channel = AndroidNotificationChannel(
         'your_notification_channel_id', // id
         'Your Notification Channel', // title
         importance: Importance.high,
       );
-
-      final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin =
-          FlutterLocalNotificationsPlugin();
 
       // Initialise the plugin. app_icon needs to be added as a drawable resource to the Android head project
       await flutterLocalNotificationsPlugin
@@ -123,12 +130,12 @@ Future<void> onStart(ServiceInstance service) async {
       }
 
       final now = DateTime.now();
-      Firebase.initializeApp().whenComplete(() {
-        final firestore = FirebaseFirestore.instance;
-        final collectionRef = firestore.collection("test");
-        final doc = {'test': now.toString()};
-        collectionRef.add(doc);
-      });
+      // Firebase.initializeApp().whenComplete(() {
+      //   final firestore = FirebaseFirestore.instance;
+      //   final collectionRef = firestore.collection("test");
+      //   final doc = {'test': now.toString()};
+      //   collectionRef.add(doc);
+      // });
 
       service.invoke(
         'update',
